@@ -13,17 +13,22 @@ body:
         For questions, please don't use this form,
         and instead use the "Discussions" tab at the top of the repository.
   - type: textarea
-    id: description
+    id: feature-description
     attributes:
       label: Description
-      description: "Please describe your enhancement or idea. Include as complete of a description of the desired changes and behaviors as possible. Including images in the field below helps convey your idea more completely as well."
+      description: |
+        Please describe your enhancement or idea. Include as complete of a description of the desired changes and
+        behaviors as possible. Including images in the field below helps convey your idea more completely as well.
     validations:
       required: true
   - type: textarea
     id: benefits
     attributes:
       label: What is the Benefit of this Enhancement?
-      description: "What workflows are improved by implementing this enhancement? What kinds of mapping activities would it support? Are there specific user groups who would benefit? How impactful and meaningful is the enhancement to them? Please be as thorough as possible and it will help in prioritizing"
+      description: |
+        What workflows are improved by implementing this enhancement? What kinds of mapping activities would it
+        support? Are there specific user groups who would benefit? How impactful and meaningful is the enhancement
+        to them? Please be as thorough as possible and it will help in prioritizing work.
     validations:
       required: true
   - type: textarea
@@ -43,6 +48,8 @@ body:
     id: who-able-to-code
     attributes:
       label: Do you know who can contribute code to this feature?
-      description: "Are you able to contribute code to this idea, or do you know who can contribute development time to this feature request? While not required, additional developers help expedite requests."
+      description: | 
+        Are you able to contribute code to this idea, or do you know who can contribute development time to this
+        feature request? While not required, additional developers help expedite requests.
     validations:
       required: false
