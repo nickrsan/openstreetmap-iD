@@ -1,21 +1,57 @@
-name: 'iD Editor: Feature, Idea, Question'
-description: You want to request a feature, share an idea or have a question.
-# title:
-# labels:
+name: "iD Editor: Feature or Idea"
+description: "You want to request a feature or share an idea."
+title: "[Feature or Idea]"
+labels: "enhancement,considering"
 # assignees:
 body:
-  - type: textarea
-    id: idea
+  - type: markdown
     attributes:
-      label: Description
-      description: Please describe you feature request, idea or question.
-      placeholder:
+      value: |
+        Use this form to submit feature requests or ideas for enhancements
+        to iD Editor that can completely convey the requested , the feature's benefits,
+        and the need the feature addresses. While not all fields are required, requests that
+        do not have enough information to fully understand the need and benefits risk being closed.
+        For questions, please don't use this form,
+        and instead use the "Discussions" tab at the top of the repository.
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: "Feature Description"
+      description: |
+        Please describe your enhancement or idea. Include as complete of a description of the desired changes
+        and behaviors as possible. Including images in the field below helps convey your idea more completely as well.
+    validations:
+      required: true
+  - type: textarea
+    id: benefits
+    attributes:
+      label: What is the Benefit of this Enhancement?
+      description: |
+        What workflows are improved by implementing this enhancement? What kinds of mapping activities would it support?
+        Are there specific user groups who would benefit? How impactful and meaningful is the enhancement to them? Please
+        be as thorough as possible and it will help in prioritizing work.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Illustrations, Mockups, or Screenshots
+      description: "Please add any images that can help convey your request/idea/question."
     validations:
       required: false
   - type: textarea
+    id: other-discussions
     attributes:
-      label: Screenshots
-      description: Please add screenshots if they can help us understand your request/idea/question.
-      placeholder:
+      label: Other Discussions of this Idea
+      description: |
+        Please refer to any issues on this repository by number, or link to any other discussions relating to this feature
+    validations:
+      required: false
+  - type: textarea
+    id: who-able-to-code
+    attributes:
+      label: Do you know who can contribute code to this feature?
+      description: |
+        Are you able to contribute code to this idea, or do you know who can contribute development time to this feature
+        request? While not required, additional developers help expedite requests.
     validations:
       required: false
