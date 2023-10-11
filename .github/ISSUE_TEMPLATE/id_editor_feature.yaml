@@ -1,6 +1,7 @@
 name: "iD Editor: Feature or Idea"
+description: "You want to request a feature or share an idea."
 title: "[Feature or Idea]"
-labels: enhancement,considering
+labels: "enhancement,considering"
 # assignees:
 body:
   - type: markdown
@@ -16,14 +17,19 @@ body:
     id: feature-description
     attributes:
       label: "Feature Description"
-      description: "Please describe your enhancement or idea. Include as complete of a description of the desired changes and behaviors as possible. Including images in the field below helps convey your idea more completely as well."
+      description: |
+        Please describe your enhancement or idea. Include as complete of a description of the desired changes
+        and behaviors as possible. Including images in the field below helps convey your idea more completely as well.
     validations:
       required: true
   - type: textarea
     id: benefits
     attributes:
       label: What is the Benefit of this Enhancement?
-      description: "What workflows are improved by implementing this enhancement? What kinds of mapping activities would it support? Are there specific user groups who would benefit? How impactful and meaningful is the enhancement to them? Please be as thorough as possible and it will help in prioritizing work."
+      description: |
+        What workflows are improved by implementing this enhancement? What kinds of mapping activities would it support?
+        Are there specific user groups who would benefit? How impactful and meaningful is the enhancement to them? Please
+        be as thorough as possible and it will help in prioritizing work.
     validations:
       required: true
   - type: textarea
@@ -36,13 +42,16 @@ body:
     id: other-discussions
     attributes:
       label: Other Discussions of this Idea
-      description: "Please refer to any issues on this repository by number, or link to any other discussions relating to this feature"
+      description: |
+        Please refer to any issues on this repository by number, or link to any other discussions relating to this feature
     validations:
       required: false
   - type: textarea
     id: who-able-to-code
     attributes:
       label: Do you know who can contribute code to this feature?
-      description: "Are you able to contribute code to this idea, or do you know who can contribute development time to this feature request? While not required, additional developers help expedite requests."
+      description: |
+        Are you able to contribute code to this idea, or do you know who can contribute development time to this feature
+        request? While not required, additional developers help expedite requests.
     validations:
       required: false
