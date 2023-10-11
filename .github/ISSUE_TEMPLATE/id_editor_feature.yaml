@@ -1,18 +1,18 @@
 name: "iD Editor: Feature or Idea"
 description: "You want to request a feature or share an idea."
-title: "[Feature or Idea]"
+# title: "[Feature or Idea]: "
 labels: "enhancement,considering"
 # assignees:
 body:
   - type: markdown
     attributes:
       value: |
-        Use this form to submit feature requests or ideas for enhancements
-        to iD Editor that can completely convey the requested , the feature's benefits,
-        and the need the feature addresses. While not all fields are required, requests that
-        do not have enough information to fully understand the need and benefits risk being closed.
-        For questions, please don't use this form,
-        and instead use the "Discussions" tab at the top of the repository.
+        Use this form to submit feature requests or ideas for enhancements to iD Editor that can completely convey
+        the requested feature, the feature's benefits, and the need the feature addresses. While not all fields
+        are required, requests that do not have enough information to fully understand the need and benefits risk
+        being closed.
+        
+        For questions, please don't use this form, and instead use the "Discussions" tab at the top of the repository.
   - type: textarea
     id: feature-description
     attributes:
